@@ -1,156 +1,7 @@
-body {
-  /* background-color: #faf9f8; */
-}
 
-:root {
-  --border_gray: #0000001f;
-  --dark_gray: #7d7d7c;
-  --mid_gray: #cccccc80;
-  --dark_orange: #ba3f13;
-  --mid_black: #000000e6;
-  --text_small: normal normal 600 12px/1.2 var(--font-inter);
-  --text_mid: normal normal 500 14px/1.4 var(--font-inter);
-}
 
 /* ============================= FAQ-SECTION =============================== */
-.faq_section {
-  padding: 57px 0 98px 0;
-  padding: 57px 0 98px 0;
-  background-color: var(--light-bg);
-}
 
-.faq_block {
-  display: grid;
-  grid-template-columns: 413px 1fr;
-  border: 1px dashed var(--border_gray);
-}
-
-.faq_left {
-  border-right: 1px solid var(--border_gray);
-  padding: 56px;
-}
-
-.faq_left .h3 {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.faq_right {
-  padding: 0;
-}
-
-.faq_group {
-  padding: 56px;
-  border-top: 1px dashed var(--border_gray);
-}
-
-.faq_group:first-child {
-  border-top: none;
-}
-
-.faq_item {
-  position: relative;
-  border-bottom: 0;
-}
-
-.faq_item::after {
-  content: "";
-  position: absolute;
-  left: 38px;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background-color: var(--mid_gray);
-}
-
-.faq_item:last-child::after {
-  display: none;
-}
-
-.faq_question {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  position: relative;
-}
-
-.faq_question .h6 {
-  font: var(--p);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  padding: 20px 0;
-}
-
-.faq_icon {
-  width: 32px;
-  height: 32px;
-  position: relative;
-  display: block;
-  border-radius: 6px;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
-  flex-shrink: 0;
-}
-
-.faq_question:hover .faq_icon {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
-.faq_icon::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 14px;
-  height: 2px;
-  background-color: var(--dark_gray);
-  transform: translate(-50%, -50%);
-}
-
-.faq_icon::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 2px;
-  height: 14px;
-  background-color: var(--dark_gray);
-  transform: translate(-50%, -50%);
-  transform-origin: center;
-  transition:
-    transform 0.35s ease,
-    opacity 0.35s ease;
-}
-
-.faq_item.active .faq_icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-  opacity: 0;
-}
-
-.faq_item.active .faq_icon::before,
-.faq_item.active .faq_icon::after {
-  background-color: var(--black);
-}
-
-.faq_answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding-left: 40px;
-}
-
-.faq_answer p {
-  margin: 0;
-  padding: 0 0 25px;
-  font: var(--p);
-  font-size: 16px;
-  color: var(--mid_black);
-  line-height: 1.6;
-}
 
 /*======================== CALCULATION SECTION ====================*/
 .calculation_section {
@@ -2297,63 +2148,17 @@ body {
 }
 
 /*======================== RESPONSIVE =============================*/
-@media (min-width:767px) {
-  /*======================== BENIFITS SECTION =============================*/
-
-  .benefits_slider .swiper-wrapper {
-    /* flex-wrap: wrap !important; */
-    /* transform: unset !important; */
-  }
-}
 
 @media (max-width: 1280px) {
 
   /*======================== HOW IT'S WORK SECTION =============================*/
-  .work_grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .work_card:nth-child(2) {
-    border-right: none;
-  }
 
-  .work_card:nth-child(1),
-  .work_card:nth-child(2) {
-    border-bottom: 1px solid #ddd;
-  }
-
-  .faq_block {
-    grid-template-columns: 1fr;
-    border: none;
-  }
-
-  .faq_left {
-    border-right: 0;
-    padding: 0 0 32px 0;
-  }
-
-  .faq_right {
-    border: 1px dashed var(--border_gray);
-  }
 }
 
 @media (max-width: 991px) {
 
   /*======================== FONT ====================*/
-  h1,
-  .h1 {
-    font-size: 50px;
-  }
-
-  h2,
-  .h2 {
-    font-size: 48px;
-  }
-
-  h2,
-  .h2 {
-    font-size: 32px;
-  }
 
   /*======================== BRAND TAB SECTION =============================*/
 
@@ -2594,18 +2399,6 @@ body {
 
   .return_back {
     padding: 20px 0 !important;
-  }
-
-  .faq_question {
-    gap: 15px;
-  }
-
-  .faq_answer {
-    padding-left: 35px;
-  }
-
-  .faq_group {
-    padding: 24px;
   }
 
   /*======================== BENIFITS SECTION =============================*/

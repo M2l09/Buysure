@@ -609,3 +609,23 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
 });
+
+document.querySelectorAll(".faq_tabs").forEach(tab => {
+  tab.onclick = () => {
+    const target = document.getElementById(tab.dataset.target);
+    if (!target) return;
+
+    document.querySelector(".faq_tabs.active")?.classList.remove("active");
+    tab.classList.add("active");
+
+    const header = parseFloat(
+      getComputedStyle(document.documentElement)
+        .getPropertyValue("--headerHeight")
+    ) || 0;
+
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + scrollY - header - 56,
+      behavior: "smooth"
+    });
+  };
+});
