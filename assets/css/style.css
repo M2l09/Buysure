@@ -1,7 +1,6 @@
 @import "harmi.css";
 
 :root {
-  --phone-back: #edecea;
   --cta-h: 52px;
   --label-h: 28px;
   --phone-w: 209.5px;
@@ -13,15 +12,20 @@
   --light-bg: #f4fff5;
   --dark-bg: #1a1816;
   --white: #FFFFFF;
-  --black: #1B5E20;
+  --black: #000000;
+  --darkgreen: #2B5748;
+  --green: #1B5E20;
+  --lightgreen: #C7EABB;
   --text-dark: #000000cc;
+  --ofwhite:#F9F5F0;
+  --coffee: #613c03;
   --gray: #808080;
   --font-inter: "Inter", sans-serif;
   --font-gt: "Arimo", sans-serif;
-  --h1: normal normal 350 56px / 1 var(--font-gt);
-  --h2: normal normal 350 48px / 1 var(--font-gt);
-  --h3: normal normal 350 36px / 1 var(--font-gt);
-  --h4: normal normal 350 24px / 1 var(--font-gt);
+  --h1: normal normal 600 56px / 1 var(--font-gt);
+  --h2: normal normal 600 48px / 1 var(--font-gt);
+  --h3: normal normal 500 36px / 1 var(--font-gt);
+  --h4: normal normal 500 24px / 1 var(--font-gt);
   --p: normal normal 400 17px / 1.5 var(--font-inter);
 }
 
@@ -39,7 +43,7 @@
 body {
   padding: 0;
   margin: 0;
-  color: var(--black);
+  color: var(--green);
   background-color: var(--light-bg);
   padding-top: var(--headerHeight);
   font-family: var(--font-inter);
@@ -119,11 +123,7 @@ p {
 
 .btn_light {
   background-color: var(--white);
-  color: var(--black);
-}
-
-.btn:hover {
-  background-color: #de5100;
+  color: var(--green);
 }
 
 .btn_light_primary:hover {
@@ -162,7 +162,7 @@ p {
 }
 
 .header_inner>ul>li>a {
-  color: var(--text-dark);
+  color: var(--green);
   font: var(--p);
   font-size: 15px;
   padding: 46px 0;
@@ -211,7 +211,7 @@ p {
   font: var(--p);
   font-size: 15px;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--green);
 }
 
 .header_inner>ul>li {
@@ -271,7 +271,7 @@ p {
 }
 
 .submenu_list a p {
-  color: var(--black);
+  color: var(--green);
   opacity: 0.8;
   font-size: 15px;
   font-weight: 500;
@@ -280,7 +280,7 @@ p {
 }
 
 .submenu_list a span {
-  color: var(--black);
+  color: var(--green);
   opacity: 0.5;
   font-size: 13px;
   font-weight: 500;
@@ -350,7 +350,7 @@ p {
 }
 
 .menu_content span {
-  color: var(--black);
+  color: var(--green);
 }
 
 .menu_content_arrow svg {
@@ -373,7 +373,7 @@ p {
 
 .banner_section p {
   margin: 0 0 16px;
-  color: var(--text-dark);
+  color: var(--green);
 }
 
 .footer {
@@ -383,7 +383,7 @@ p {
 }
 
 .footer_inner {
-  background-color: #1a1816;
+  background-color: var(--darkgreen);
   border-radius: 32px;
   padding: 48px 20px;
 }
@@ -395,7 +395,7 @@ p {
 }
 
 .footer_newsletter_form input[type="email"] {
-  color: var(--black);
+  color: var(--green);
   padding: 15px 124px 15px 24px;
   border-radius: 16px;
   font-size: 15px;
@@ -419,7 +419,7 @@ p {
   font-size: 15px;
   font-weight: 500;
   border: 0;
-  background-color: var(--black);
+  background-color: var(--green);
   color: var(--white);
 }
 
@@ -584,6 +584,7 @@ p {
   display: flex;
   gap: 24px;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 .support_card {
@@ -603,7 +604,7 @@ p {
 
 .support_card:nth-child(2) {
   background-color: #faf9f6;
-  color: var(--black);
+  color: var(--green);
 }
 
 .support_card:last-child {
@@ -641,7 +642,7 @@ p {
   padding: 24px 20px 0;
   border-radius: 16px;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--green);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -673,7 +674,7 @@ p {
 p.support_review_text {
   margin-bottom: 25px;
   font-size: 12px;
-  color: var(--black);
+  color: var(--green);
   opacity: 0.7;
   line-height: 1.3;
 }
@@ -692,7 +693,7 @@ p.support_review_text {
 .support_review_name div span {
   font-size: 13px;
   font-weight: 400;
-  color: var(--black);
+  color: var(--green);
   font-family: var(--font-inter);
   opacity: 0.5;
   line-height: 1;
@@ -702,7 +703,7 @@ p.support_review_text {
   line-height: 1;
   font-size: 13px;
   font-weight: 600;
-  color: var(--black);
+  color: var(--green);
   font-family: var(--font-inter);
   margin-bottom: 2px;
   opacity: 0.8;
@@ -981,7 +982,7 @@ p.support_review_text {
   justify-content: flex-start;
   gap: 12px;
   flex: 1;
-  color: var(--black);
+  color: var(--green);
   padding: 15px;
   border: 0;
   background-color: transparent;
@@ -1131,7 +1132,7 @@ p.support_review_text {
   font-size: 15px;
   font-family: var(--font-inter);
   font-weight: 500;
-  color: var(--black);
+  color: var(--green);
   border: none;
   padding: 6px 16px;
   opacity: 0.5;
@@ -1148,10 +1149,10 @@ p.support_review_text {
 }
 
 .journey_inner_wrapper {
-  background-color: #1a1816;
-  border-radius: 32px;
-  padding: 120px 20px 77px;
-  color: var(--white);
+    background-color: var(--lightgreen);
+    border-radius: 32px;
+    padding: 120px 20px 77px;
+    color: var(--green);
 }
 
 .journey_inner_wrapper .heading_block h2 {
@@ -1211,7 +1212,7 @@ p.support_review_text {
 .journey_right {
   padding: 32px;
   border-radius: 16px;
-  background-color: #292623;
+  background-color: var(--ofwhite);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1238,7 +1239,7 @@ p.support_review_text {
 }
 
 .journey_right .arrow path {
-  fill: var(--white);
+  fill: currentColor;
 }
 
 .journey_right h5 {
@@ -1314,7 +1315,7 @@ p.support_review_text {
 }
 
 .different_content p {
-  color: var(--black);
+  color: var(--green);
   font-size: 32px;
   letter-spacing: -0.48px;
   line-height: 1.2;
@@ -1442,7 +1443,7 @@ p.support_review_text {
 }
 
 .experience_tab p {
-  color: var(--text-dark);
+  color: var(--green);
   padding: 8px 0;
 }
 
@@ -1474,7 +1475,7 @@ p.support_review_text {
 .experience_inner {
   width: 100%;
   margin: 0 auto;
-  background-color: #2B5748;
+  background-color: var(--darkgreen);
   max-width: 500px;
   padding: 12px;
   display: flex;
@@ -1534,7 +1535,7 @@ p.support_review_text {
 .exp_product_details span {
   font: var(--p);
   font-size: 15px;
-  color: var(--black);
+  color: var(--green);
   opacity: 0.6;
   line-height: 1.2;
   margin-bottom: 6px;
@@ -1592,7 +1593,7 @@ p.support_review_text {
   display: inline;
   font-size: 15px;
   line-height: 1.2;
-  color: var(--black);
+  color: var(--green);
   opacity: 0.6;
 }
 
@@ -1625,7 +1626,7 @@ p.support_review_text {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
-  color: var(--black);
+  color: var(--green);
   opacity: 0.6;
   text-align: center;
   display: block;
@@ -1826,7 +1827,7 @@ input:checked+.switch_slider:before {
 
 .left_border .para_with_icon p {
   font-family: var(--font-inter);
-  color: var(--black);
+  color: var(--green);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
@@ -2024,7 +2025,7 @@ input:checked+.switch_slider:before {
 }
 
 .top_brands_info h4 {
-  color: var(--text-dark);
+  color: var(--coffee);
   line-height: 1.5;
 }
 
@@ -2201,7 +2202,7 @@ input:checked+.switch_slider:before {
   position: absolute;
   inset: 0;
   border-radius: 15px;
-  background-color: var(--phone-back);
+  background-color: #edecea;
   transform: rotateY(-180deg) translateZ(1px);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -2247,9 +2248,6 @@ input:checked+.switch_slider:before {
   display: none;
 }
 
-@media only screen and (max-width: 1440px) {}
-
-@media only screen and (max-width: 1280px) {}
 
 @media only screen and (max-width: 1024px) {
   .desk_only {
@@ -2290,8 +2288,8 @@ input:checked+.switch_slider:before {
     font-size: 48px;
   }
 
-  h2,
-  .h2 {
+  h3,
+  .h3 {
     font-size: 32px;
   }
 
@@ -2364,7 +2362,7 @@ input:checked+.switch_slider:before {
     right: 0 !important;
     width: 100% !important;
     height: 100%;
-    background-color: #fff !important;
+    background-color: var(--light-bg) !important;
     overflow-x: hidden !important;
     overflow-y: auto !important;
     opacity: 1 !important;
@@ -2758,6 +2756,10 @@ input:checked+.switch_slider:before {
   .footer_rating_img {
     max-width: 150px;
   }
+  .banner_section h1 {
+      font-size: 28px;
+      letter-spacing: 0;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2784,5 +2786,3 @@ input:checked+.switch_slider:before {
     padding-right: 20px;
   }
 }
-
-@media only screen and (max-width: 349px) {}
