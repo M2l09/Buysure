@@ -1061,8 +1061,9 @@ p.support_review_text {
 
 .display_content .tab_content img {
   height: 100%;
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .tab_percentage {
@@ -5984,6 +5985,7 @@ input:checked+.switch_slider:before {
   .support_card {
     flex: 1 0 330px;
     padding: 24px;
+    min-height: 500px;
   }
 
   .support_wrapper {
