@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".brand_tab_btn"),
     desc = document.querySelector(".brand_tab_description"),
     descriptions = [
-      "Easily upgrade with Onward with a single click.",
+      "Easily upgrade with Buysure with a single click.",
       "Keep customers informed with beautifully branded email notifications.",
       "Track every order in one place.",
       "File a claim quickly without leaving your storefront.",

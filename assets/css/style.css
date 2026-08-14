@@ -1600,7 +1600,7 @@ p.support_review_text {
 }
 
 .benefit_list .active {
-  color: #ff7700;
+  color: var(--darkblue);
   background-color: rgba(218, 145, 0, 0.09);
   opacity: 1;
 }
