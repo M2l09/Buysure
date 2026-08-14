@@ -651,8 +651,8 @@ document.addEventListener("DOMContentLoaded", () => {
     range.style.background = `
             linear-gradient(
                 to right,
-                #063b00 0%,
-                #063b00 ${percent}%,
+                #293681 0%,
+                #293681 ${percent}%,
                 #d9d9d9 ${percent}%,
                 #d9d9d9 100%
             )

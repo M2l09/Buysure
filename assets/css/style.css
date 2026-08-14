@@ -64,6 +64,7 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 ul {
@@ -2815,7 +2816,6 @@ input:checked+.switch_slider:before {
 .refer_image {
   width: 100%;
   max-width: 240px;
-  height: 332px;
 }
 
 .refer_image img {
@@ -3368,8 +3368,6 @@ input:checked+.switch_slider:before {
 }
 
 .review_back {
-  background-color: #eeece24d;
-  border: 1px dashed var(--border_gray);
   padding: 42px 0;
   border-bottom: none;
 }
@@ -3641,7 +3639,7 @@ input:checked+.switch_slider:before {
 }
 
 .revenue .returns_fraud_step .h4 {
-  background-color: #353535;
+  background-color: var(--primary);
   color: var(--white);
 }
 
@@ -3770,7 +3768,7 @@ input:checked+.switch_slider:before {
 .platform_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid var(--primary);
 }
 
 .platform_content {
@@ -3787,7 +3785,7 @@ input:checked+.switch_slider:before {
 }
 
 .platform_card:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid var(--primary);
 }
 
 .platform_content .h4 {
@@ -3816,7 +3814,6 @@ input:checked+.switch_slider:before {
   aspect-ratio: 389 / 309;
   max-width: 400px;
   margin: 0 auto;
-  height: 309px;
 }
 
 .platform_img img {
@@ -3864,19 +3861,19 @@ input:checked+.switch_slider:before {
 }
 
 .revenue_card_orange {
-  background: linear-gradient(#f27c36 0%, #ec5800 100%);
+  background: linear-gradient(#293681 0%, #000000cc 100%);
 }
 
 .revenue_card_dark {
-  background-color: #292623;
+    background: linear-gradient(#293681 0%, #000000cc 100%);
 }
 
 .revenue_badge {
   width: max-content;
   padding: 11px 20px;
   border-radius: 50px;
-  background-color: var(--dark_orange);
-  color: var(--white);
+  background-color:  var(--white);
+  color: var(--primary);
   font: var(--text_mid);
 }
 
@@ -3915,7 +3912,7 @@ input:checked+.switch_slider:before {
 }
 
 .dark_badge {
-  background-color: var(--dark-bg);
+  background-color: var(--white);
 }
 
 .revenue_card .h4 {
@@ -4027,7 +4024,6 @@ input:checked+.switch_slider:before {
 .recent_grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  box-shadow: 0 0 0 1px #0000001a;
   background-color: var(--light-bg);
   border-radius: 24px;
   gap: 24px;
@@ -4186,7 +4182,6 @@ input:checked+.switch_slider:before {
 
 .group_heading .h2 {
   font-size: 40px;
-  font-weight: 400;
 }
 
 .group_heading p {
@@ -4198,12 +4193,12 @@ input:checked+.switch_slider:before {
 .group_stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px dashed var(--border_gray);
+  border: 1px dashed var(--primary);
   margin-bottom: 24px;
 }
 
 .group_stat_item {
-  border-right: 1px dashed var(--border_gray);
+  border-right: 1px dashed var(--primary);
   padding: 20px 30px;
 }
 
@@ -4215,7 +4210,7 @@ input:checked+.switch_slider:before {
   font-size: 40px;
   line-height: 1.2;
   font-weight: 700;
-  color: rgb(53, 53, 53);
+  color: var(--primary);
   margin-bottom: 4px;
   letter-spacing: -1.2px;
 }
@@ -4276,7 +4271,7 @@ input:checked+.switch_slider:before {
 }
 
 .group_sidebar {
-  padding: 0 0 0 80px;
+  padding: 20px;
   position: sticky;
   top: calc(var(--headerHeight) + 20px);
   height: fit-content;
@@ -4320,20 +4315,20 @@ input:checked+.switch_slider:before {
 }
 
 .group_sidebar .btn {
-  background-color: transparent;
-  border: 1px solid #0003;
+  background-color: var(--primary);
+  border: 1px solid transparent;
   padding: 8px 16px;
-  color: var(--gray);
-  width: 100%;
-}
-
-.tag_btn:hover {
-  background-color: var(--black);
   color: var(--white);
+  width: auto;
+}
+.group_sidebar .btn:hover{
+  background-color: var(--white);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .group_sidebar .newsletter_box {
-  background-color: var(--light-bg);
+  background-color: var(--white);
   border-radius: 16px;
   margin: 32px 0;
   padding: 32px;
@@ -4354,15 +4349,18 @@ input:checked+.switch_slider:before {
 .group_sidebar .newsletter_box input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--primary);
   outline: none;
   margin-bottom: 22px;
   font: var(--p);
   font-size: 15px;
   background: rgba(255, 255, 255, 0);
-  color: rgb(0, 0, 0);
+  color: var(--primary);
   padding: 2px 0 6px 0;
   font-weight: 500;
+}
+.group_sidebar .newsletter_box input::placeholder{
+  color: var(--primary);
 }
 
 .upgrade_img {
@@ -4381,14 +4379,15 @@ input:checked+.switch_slider:before {
   width: 100%;
   border: none;
   border-radius: 50px;
-  background-color: var(--black);
+  background-color: var(--primary);
   color: var(--white);
   cursor: pointer;
   transition: .3s;
 }
 
 .group_sidebar .newsletter_box button:hover {
-  background-color: var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 .share_links a {
@@ -4413,7 +4412,7 @@ input:checked+.switch_slider:before {
 
 .group_details_wrapper {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 408px;
+  grid-template-columns: 408px minmax(0, 1fr);
   gap: 32px;
   align-items: start;
 }
@@ -5056,6 +5055,7 @@ input:checked+.switch_slider:before {
 
   .group_sidebar {
     padding: 0;
+    position: static;
   }
 }
 
@@ -5104,12 +5104,20 @@ input:checked+.switch_slider:before {
   .terms_des_block h1.h1 {
     font-size: 32px;
   }
-
+  .store_credit_preview,
+  .returns_fraud_section .container {
+      padding: 0;
+  }
+  .group_content p {
+      margin-top: 16px;
+  }
   .terms_des_block h1.h1 br,
   .terms_des_block p br {
     display: none;
   }
-
+  .group_heading .h2 {
+      font-size: 24px;
+  }
   .top_brands_info h4 {
     font-size: 18px;
   }
@@ -5118,11 +5126,16 @@ input:checked+.switch_slider:before {
   .journey_section,
   .experience_section,
   .terms_section,
-  .recent_section {
+  .recent_section,
+  .group_details_section,
+  .brand_section,
+  .section_padding {
     padding: 35px 0;
   }
 
-  .different_content p span {
+  .different_content p span,
+  .revenue_growth_heading .h2,
+  .platform_heading .h2 {
     font-size: 28px;
   }
 
@@ -5131,14 +5144,19 @@ input:checked+.switch_slider:before {
   .banner_section h1 br,
   .banner_section p,
   .experience_tab_body,
-  .experience_tab_head .tab_time {
+  .experience_tab_head .tab_time,
+  .platform_heading .h2 br {
     display: none;
   }
-
+  .calculation_left .h1 {
+      font-size: 28px;
+  }
   .top_brands_inner {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
   }
-
+  .brand_block {
+      margin-bottom: 40px;
+  }
   .results_section .results_slider {
     padding: 0 20px;
   }
@@ -5637,7 +5655,7 @@ input:checked+.switch_slider:before {
   /*======================== READIT BONUS SECTION =============================*/
 
   .store_credit_section {
-    padding: 48px 0 64px 0;
+    padding: 48px 0;
   }
 
   .store_credit_image {
@@ -5665,7 +5683,7 @@ input:checked+.switch_slider:before {
 
   /*======================== RETURN SECTION =============================*/
   .return_block {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .return_content {
@@ -5673,7 +5691,7 @@ input:checked+.switch_slider:before {
   }
 
   .review_back {
-    padding: 60px;
+    padding: 0;
 
   }
 
@@ -5693,10 +5711,6 @@ input:checked+.switch_slider:before {
 
   .returns_metric_item {
     padding: 20px;
-  }
-
-  .section_padding {
-    padding: 120px 0 0 0;
   }
 
   /*======================== FEATURES_MARQUEE_SECTION =============================*/
@@ -5723,8 +5737,7 @@ input:checked+.switch_slider:before {
   }
 
   .platform_card {
-    max-width: 100%;
-    gap: 76px;
+    gap: 24px;
   }
 
   /*======================== REVENUE_GROWTH_SECTION =============================*/
@@ -5775,7 +5788,7 @@ input:checked+.switch_slider:before {
   }
 
   .returns_fraud_timeline {
-    padding: 0 24px 80px;
+    padding: 0 20px 80px;
   }
 
   .returns_fraud_line {
@@ -5806,9 +5819,6 @@ input:checked+.switch_slider:before {
   }
 
   /*======================== GROUP INFO SECTION  =============================*/
-  .group_details_section {
-    padding: 48px 0 150px 0;
-  }
 
   .summary_box {
     display: none;
@@ -5820,7 +5830,7 @@ input:checked+.switch_slider:before {
 
   .group_stat_item {
     border-right: none;
-    border-bottom: 1px dashed #d8d8d8;
+    border-bottom: 1px dashed var(--primary);
   }
 
   .group_stat_item:last-child {
@@ -5859,6 +5869,9 @@ input:checked+.switch_slider:before {
 
   .results_slider {
     padding: 0 30px;
+  }
+  .platform_content {
+      padding: 24px 24px 0;
   }
 }
 
@@ -5905,7 +5918,7 @@ input:checked+.switch_slider:before {
   /*======================== RECENT POSTS SECTION =============================*/
 
   .recent_post_image {
-    padding-bottom: 84%;
+    padding-bottom: 60%;
     max-width: 100%;
   }
 
@@ -5914,11 +5927,6 @@ input:checked+.switch_slider:before {
   .return_img {
     max-width: 215px;
     aspect-ratio: 215 / 425;
-  }
-
-  /*======================== PLATFORM SECTION =============================*/
-  .platform_card {
-    gap: 76px;
   }
 
   /*======================== REVENUE_GROWTH_SECTION =============================*/
@@ -5991,5 +5999,11 @@ input:checked+.switch_slider:before {
   .support_wrapper {
     margin-right: -20px;
     padding-right: 20px;
+  }
+  .featured_overlay .h3 {
+      font-size: 14px;
+  }
+  .featured_card {
+      aspect-ratio: 529 / 376;
   }
 }
