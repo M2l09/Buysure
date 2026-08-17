@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Benefits_ Slider
   var benefitsSwiper = new Swiper(".benefits_slider", {
-    slidesPerView: 1.05,
+    slidesPerView: 1,
     spaceBetween: 16,
     speed: 800,
     loop: false,
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       0: {
         enabled: true,
-        slidesPerView: 1.05,
+        slidesPerView: 1,
         spaceBetween: 16,
       },
       480: {
